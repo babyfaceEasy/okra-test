@@ -1,0 +1,9 @@
+version: '3.6'
+
+services:
+  okraapp:
+    build: .
+    container_name: okra-test
+    ports: 
+      - 3001:3001
+    env_file: .env
